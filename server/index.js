@@ -13,7 +13,7 @@ const balances = {
     "0x3": 75,
 }
 
-app.get("/balance/:address", (req, res) => {
+app.get("/api/balance/:address", (req, res) => {
     const { address } = req.params;
     const balance = balances[address] || 0;
 
