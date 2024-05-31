@@ -3,17 +3,27 @@ import Container from './Container'
 
 function Wallet() {
   return (
-    <div className=' '>
+    <div>
       <Container>
-        <h1>Wallet</h1>
-        <div>
-          <input 
-          className=' border border-black px-3 p-1'
-          type="text" 
-          placeholder='0x1' />
+        <div className=' text-4xl font-bold py-5 '>
+          <h1>WALLET</h1>
         </div>
-      </Container>
+        <div className=' flex flex-col gap-1'>
+          <label htmlFor="">Your Address</label>
+          <input
+            type="text"
+            placeholder='0x1'
+            className=' p-1 px-3 border-2 border-black rounded-xl ' />
+        </div>
+        <div className=' mt-5'>
+          <h2 className=' pb-1'> Balance</h2>
+          <input 
+          type="none"
+          className=' p-1 px-3 border-2 border-black rounded-xl bg-slate-200 ' 
+          value={"none"}/>
+        </div>
 
+      </Container>
     </div>
   )
 }

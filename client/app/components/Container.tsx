@@ -1,15 +1,11 @@
-import PropTypes from 'prop-types';
+import React from 'react'
 
-const Container = ({ children }:any) => {
+function Container({children}:any) {
   return (
-    <div className=" items-center  w-[50%]  mx-auto px-4 sm:px-6 lg:px-8 border-2 border-black">
-      {children}
+    <div className=' p-5 bg-slate-100 inline-block border-2 border-black rounded-lg'>
+    {children}
     </div>
-  );
-};
+  )
+}
 
-Container.propTypes = {
-  children: PropTypes.node.isRequired,
-};
-
-export default Container;
+export default Container
